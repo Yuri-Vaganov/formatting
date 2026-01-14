@@ -17,11 +17,17 @@
     "release": "standard-version",
     "release:rc": "standard-version -p",
     "release:prev": "node ./scripts/re-release.mjs",
-    "format": "prettier --find-config-path --write 'src/**/*'",
+    "format": "prettier --find-config-path --write ./src",
     "prepublishOnly": "npm run lint && npm run build",
     "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@infomaximum/localization": "^1.1.0",
+    "@infomaximum/utility": "^9.2.0",
+    "decimal.js": "10.3.1",
+    "dayjs": "1.11.13",
+    "lodash": "^4.17.21"
+  },
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
